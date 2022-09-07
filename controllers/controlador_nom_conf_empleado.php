@@ -14,6 +14,7 @@ use tglobally\template_tg\html;
 use tglobally\template_tg\menu_lateral;
 
 
+
 class controlador_nom_conf_empleado extends \gamboamartin\nomina\controllers\controlador_nom_conf_empleado {
 
 
@@ -31,23 +32,22 @@ class controlador_nom_conf_empleado extends \gamboamartin\nomina\controllers\con
         }
 
         $this->keys_row_lista = $keys_row_lista;
-        $this->total_items_sections = 7;
+
+        $this->total_items_sections = 1;
 
         $this->actions_number['lista']['item'] = 1;
-        $this->actions_number['lista']['etiqueta'] = 'Nueva Empresa';
+        $this->actions_number['lista']['etiqueta'] = 'Configuracion de empleado';
 
         $this->actions_number['alta']['item'] = 1;
-        $this->actions_number['alta']['etiqueta'] = 'Alta';
+        $this->actions_number['alta']['etiqueta'] = 'Configuracion de empleado';
 
-        $this->actions_number['modifica']['item'] = 1;
-        $this->actions_number['modifica']['etiqueta'] = 'Generales';
 
+        $this->number_active = 1;
 
         if(isset($this->actions_number[$this->accion])){
             $this->number_active = $this->actions_number[$this->accion]['item'];
-        } else {
-            $this->number_active = 1;
         }
+
 
         $menu_lateral = (new menu_lateral())->number_head(number_active: $this->number_active);
         if(errores::$error){
