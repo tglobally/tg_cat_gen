@@ -14,14 +14,14 @@ use tglobally\template_tg\html;
 use tglobally\template_tg\menu_lateral;
 
 
-class controlador_nom_conf_empleado extends \gamboamartin\nomina\controllers\controlador_nom_conf_empleado {
+class controlador_nom_conf_factura extends \gamboamartin\nomina\controllers\controlador_nom_conf_factura {
 
 
     public function __construct(PDO $link, stdClass $paths_conf = new stdClass()){
 
         $html_base = new html();
         parent::__construct( link: $link, html: $html_base);
-        $this->titulo_lista = 'Configuracion Empleado';
+        $this->titulo_lista = 'Configuracion Factura';
 
         $keys_row_lista = $this->keys_rows_lista();
         if(errores::$error){
@@ -63,7 +63,7 @@ class controlador_nom_conf_empleado extends \gamboamartin\nomina\controllers\con
 
         $keys_row_lista = array();
 
-        $keys = array('nom_conf_empleado_id','nom_conf_empleado_codigo','nom_conf_empleado_descripcion','nom_conf_empleado_descripcion_select');
+        $keys = array('nom_conf_factura_id','nom_conf_factura_codigo','nom_conf_factura_descripcion','nom_conf_factura_descripcion_select');
 
         foreach ($keys as $campo){
             $keys_row_lista = $this->key_row_lista_init(campo: $campo, keys_row_lista: $keys_row_lista);
@@ -80,7 +80,7 @@ class controlador_nom_conf_empleado extends \gamboamartin\nomina\controllers\con
         $data = new stdClass();
         $data->campo = $campo;
 
-        $campo = str_replace(array('nom_conf_empleado', '_'), array('', ' '), $campo);
+        $campo = str_replace(array('nom_conf_factura', '_'), array('', ' '), $campo);
         $campo = ucfirst(strtolower($campo));
 
         $data->name_lista = $campo;
