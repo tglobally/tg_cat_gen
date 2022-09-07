@@ -9,7 +9,6 @@
         <div class="  form-main" id="form">
             <form method="post" action="./index.php?seccion=nom_conf_empleado&accion=alta_bd&session_id=<?php echo $controlador->session_id; ?>" class="form-additional">
                 <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->codigo_bis; ?>
                 <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->select->em_empleado_id; ?>
                 <?php echo $controlador->inputs->select->nom_conf_nomina_id; ?>

@@ -1,4 +1,4 @@
-<?php /** @var tglobally\tg_empresa\controllers\controlador_org_empresa $controlador */ ?>
+<?php /** @var \tglobally\tg_cat_gen\controllers\controlador_nom_conf_empleado $controlador */ ?>
 <?php /** @var string $number numero a mostrar */ ?>
 
 <button class="btn btn-default menu-lateral menu-lateral-active">

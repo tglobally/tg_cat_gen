@@ -9,7 +9,6 @@
             <form method="post" action="<?php echo $controlador->link_modifica_bd; ?>" class="form-additional">
                 <?php echo $controlador->inputs->id; ?>
                 <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->codigo_bis; ?>
                 <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->select->em_empleado_id; ?>
                 <?php echo $controlador->inputs->select->nom_conf_nomina_id; ?>
@@ -17,6 +16,10 @@
                     <div class="col-md-6 btn-ancho">
                         <button type="submit" class="btn btn-info btn-guarda col-md-12 " value="modifica">Modifica</button>
                     </div>
+                    <div class="col-md-6">
+                        <a href="<?php echo $controlador->link_lista ?>" class="btn btn-info btn-guarda col-md-12 ">Regresar</a>
+                    </div>
+
                 </div>
             </form>
 
