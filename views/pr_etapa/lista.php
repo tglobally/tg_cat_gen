@@ -37,9 +37,9 @@ $url_icons = (new views())->url_icons;
                 <tr>
                     <th scope="col">Acciones</th>
                     <th scope="col">Id</th>
-                    <th scope="col">codigo</th>
-                    <th scope="col">descripcion</th>
-                    <th scope="col">descripcion_select</th>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Descripcion_select</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -57,10 +57,10 @@ $url_icons = (new views())->url_icons;
                         </a>
 
                     </th>
-                    <th><?php echo $registro->nom_conf_factura_id; ?></th>
-                    <th><?php echo $registro->nom_conf_factura_codigo; ?></th>
-                    <th><?php echo $registro->nom_conf_factura_descripcion; ?></th>
-                    <th><?php echo $registro->nom_conf_factura_descripcion_select; ?></th>
+                    <th><?php echo $registro->pr_etapa_id; ?></th>
+                    <th><?php echo $registro->pr_etapa_codigo; ?></th>
+                    <th><?php echo $registro->pr_etapa_descripcion; ?></th>
+                    <th><?php echo $registro->pr_etapa_descripcion_select; ?></th>
                 </tr>
                 <?php } ?>
 
