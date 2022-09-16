@@ -12,13 +12,7 @@
                 <?php echo $controlador->inputs->codigo_bis; ?>
                 <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->descripcion_select; ?>
-                <?php echo $controlador->inputs->select->cat_sat_forma_pago_id; ?>
-                <?php echo $controlador->inputs->select->cat_sat_metodo_pago_id; ?>
-                <?php echo $controlador->inputs->select->cat_sat_moneda_id; ?>
-                <?php echo $controlador->inputs->select->com_tipo_cambio_id; ?>
-                <?php echo $controlador->inputs->select->cat_sat_uso_cfdi_id; ?>
-                <?php echo $controlador->inputs->select->cat_sat_tipo_de_comprobante_id; ?>
-                <?php echo $controlador->inputs->select->com_producto_id; ?>
+                <?php echo $controlador->inputs->alias; ?>
                 <div class="buttons col-md-12">
                     <div class="col-md-6 btn-ancho">
                         <button type="submit" class="btn btn-info btn-guarda col-md-12 " value="modifica">Modifica</button>

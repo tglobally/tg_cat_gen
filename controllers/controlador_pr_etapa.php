@@ -77,7 +77,7 @@ class controlador_pr_etapa extends \gamboamartin\proceso\controllers\controlador
         $data = new stdClass();
         $data->campo = $campo;
 
-        $campo = str_replace(array('nom_conf_factura', '_'), array('', ' '), $campo);
+        $campo = str_replace(array('pr_etapa', '_'), array('', ' '), $campo);
         $campo = ucfirst(strtolower($campo));
 
         $data->name_lista = $campo;
