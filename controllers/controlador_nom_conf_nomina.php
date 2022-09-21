@@ -60,7 +60,7 @@ class controlador_nom_conf_nomina extends \gamboamartin\nomina\controllers\contr
 
         $keys_row_lista = array();
 
-        $keys = array('nom_conf_nomina_id','nom_conf_nomina_codigo','nom_conf_nomina_descripcion','nom_conf_nomina_descripcion_select');
+        $keys = array('nom_conf_nomina_id','nom_conf_nomina_codigo','nom_conf_nomina_codigo_bis','nom_conf_nomina_descripcion','nom_conf_nomina_descripcion_select');
 
         foreach ($keys as $campo){
             $keys_row_lista = $this->key_row_lista_init(campo: $campo, keys_row_lista: $keys_row_lista);
