@@ -18,10 +18,13 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
     public string $include_menu = '';
     public string $mensaje_html = '';
 
+    public string $link_lista_nom_conf_nomina = '';
     public string $link_lista_nom_conf_empleado = '';
     public string $link_lista_nom_conf_factura  = '';
     public string $link_lista_nom_proceso_nomina = '';
     public string $link_lista_pr_etapa = '';
+
+
 
     /**
      * Funcion de controlador donde se ejecutaran siempre que haya un acceso denegado
@@ -56,6 +59,9 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
         if(errores::$error){
             return $this->retorno_error(mensaje:  'Error al generar template',data: $template, header: $header, ws: $ws);
         }
+
+        $hd = "index.php?seccion=nom_conf_nomina&accion=lista&session_id=$this->session_id";
+        $this->link_lista_nom_conf_nomina = $hd;
 
         $hd = "index.php?seccion=nom_conf_empleado&accion=lista&session_id=$this->session_id";
         $this->link_lista_nom_conf_empleado = $hd;
