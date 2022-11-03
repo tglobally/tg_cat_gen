@@ -36,6 +36,11 @@ class controlador_nom_conf_nomina extends \gamboamartin\nomina\controllers\contr
         $this->sidebar['modifica']['stepper_active'] = true;
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica", link: $this->link_alta,menu_lateral_active: true));
+
+        $this->sidebar['asigna_percepcion']['titulo'] = "Conf. Nomina";
+        $this->sidebar['asigna_percepcion']['stepper_active'] = true;
+        $this->sidebar['asigna_percepcion']['menu'] = array(
+            $this->menu_item(menu_item_titulo: "Asigna Percepcion", link: $this->link_alta,menu_lateral_active: true));
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array

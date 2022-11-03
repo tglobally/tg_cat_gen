@@ -7,12 +7,9 @@
  *
  */
 namespace tglobally\tg_cat_gen\controllers;
-use gamboamartin\errores\errores;
 use PDO;
 use stdClass;
 use tglobally\template_tg\html;
-use tglobally\template_tg\menu_lateral;
-
 
 class controlador_nom_conf_percepcion extends \gamboamartin\nomina\controllers\controlador_nom_conf_percepcion {
 
@@ -37,7 +34,6 @@ class controlador_nom_conf_percepcion extends \gamboamartin\nomina\controllers\c
         $this->sidebar['modifica']['stepper_active'] = true;
         $this->sidebar['modifica']['menu'] = array(
             $this->menu_item(menu_item_titulo: "Modifica", link: $this->link_alta,menu_lateral_active: true));
-
     }
 
     public function menu_item(string $menu_item_titulo, string $link, bool $menu_seccion_active = false,bool $menu_lateral_active = false): array

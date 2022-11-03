@@ -10,10 +10,13 @@
         <div class="  form-main" id="form">
             <form method="post" action="<?php echo $controlador->link_nom_conf_percepcion_alta_bd;?>" class="form-additional">
                 <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->nom_conf_factura_id; ?>
+                <?php echo $controlador->inputs->nom_conf_nomina_id; ?>
                 <?php echo $controlador->inputs->descripcion; ?>
-                <?php echo $controlador->inputs->cat_sat_periodicidad_pago_nom_id; ?>
-                <?php echo $controlador->inputs->cat_sat_tipo_nomina_id; ?>
+                <?php echo $controlador->inputs->nom_percepcion_id; ?>
+                <?php echo $controlador->inputs->importe_gravado; ?>
+                <?php echo $controlador->inputs->importe_exento; ?>
+                <?php echo $controlador->inputs->fecha_inicio; ?>
+                <?php echo $controlador->inputs->fecha_fin; ?>
                 <div class="buttons col-md-12">
                     <div class="col-md-6">
                         <button type="submit" class="btn btn-info btn-guarda col-md-12 " name="btn_action_next" value="modifica">Guarda</button>
@@ -25,25 +28,21 @@
             </form>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="widget widget-box box-container widget-mylistings">
-                        <div class="widget-header" style="display: flex;justify-content: space-between;align-items: center;">
-                            <h2>Percepciones Asignadas</h2>
-                        </div>
-                        <div class="">
-                            <table id="nom_conf_percepcion" class="table table-striped" >
-                            </table>
-                        </div>
+        <div class="lista">
+            <div class="card">
+                <div class="card-header">
+                    <span class="text-header">Percepciones Asignadas</span>
+                </div>
+                <div class="card-body">
+                    <div class="cont_tabla_sucursal  col-md-12">
+                        <table id="nom_conf_percepcion" class="table table-striped" ></table>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
+
+
 </div>
 
 
