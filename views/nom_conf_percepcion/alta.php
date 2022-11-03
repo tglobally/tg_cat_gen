@@ -1,4 +1,4 @@
-<?php /** @var \tglobally\tg_cat_gen\controllers\controlador_nom_conf_abono $controlador */ ?>
+<?php /** @var \tglobally\tg_cat_gen\controllers\controlador_nom_conf_percepcion $controlador */ ?>
 
 <?php (new \tglobally\template_tg\template())->sidebar($controlador); ?>
 
@@ -8,17 +8,19 @@
         <h3 class="text-center titulo-form">Hola, <?php echo $controlador->datos_session_usuario['adm_usuario_user']; ?> </h3>
 
         <div class="  form-main" id="form">
-            <form method="post" action="<?php echo $controlador->link_modifica_bd;?>" class="form-additional">
-
+            <form method="post" action="<?php echo $controlador->link_alta_bd;?>" class="form-additional">
                 <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->adm_campo_id; ?>
-                <?php echo $controlador->inputs->em_tipo_anticipo_id; ?>
-                <?php echo $controlador->inputs->em_tipo_abono_anticipo_id; ?>
+                <?php echo $controlador->inputs->codigo_bis; ?>
                 <?php echo $controlador->inputs->descripcion; ?>
-                <?php echo $controlador->inputs->nom_deduccion_id; ?>
+                <?php echo $controlador->inputs->nom_conf_nomina_id; ?>
+                <?php echo $controlador->inputs->nom_percepcion_id; ?>
+                <?php echo $controlador->inputs->importe_gravado; ?>
+                <?php echo $controlador->inputs->importe_exento; ?>
+                <?php echo $controlador->inputs->fecha_inicio; ?>
+                <?php echo $controlador->inputs->fecha_fin; ?>
                 <div class="buttons col-md-12">
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-info btn-guarda col-md-12 " value="modifica">Guarda</button>
+                        <button type="submit" class="btn btn-info btn-guarda col-md-12 " name="btn_action_next" value="modifica">Guarda</button>
                     </div>
                     <div class="col-md-6 ">
                         <a href="<?php echo $controlador->link_lista; ?>"  class="btn btn-info btn-guarda col-md-12 ">Lista</a>

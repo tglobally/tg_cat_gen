@@ -1,4 +1,4 @@
-<?php /** @var \tglobally\tg_cat_gen\controllers\controlador_nom_conf_nomina $controlador */ ?>
+<?php /** @var \tglobally\tg_cat_gen\controllers\controlador_nom_conf_percepcion  $controlador */ ?>
 
 <?php (new \tglobally\template_tg\template())->sidebar($controlador); ?>
 
@@ -20,6 +20,4 @@
 
     </div>
 </div>
-
-
 

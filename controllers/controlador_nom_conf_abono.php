@@ -50,6 +50,4 @@ class controlador_nom_conf_abono extends \gamboamartin\nomina\controllers\contro
 
         return $menu_item;
     }
-
-
 }
