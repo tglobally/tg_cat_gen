@@ -9,11 +9,9 @@
 
         <div class="  form-main" id="form">
             <form method="post" action="<?php echo $controlador->link_alta_bd;?>" class="form-additional">
-                <?php echo $controlador->inputs->codigo; ?>
-                <?php echo $controlador->inputs->codigo_bis; ?>
-                <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->nom_conf_nomina_id; ?>
                 <?php echo $controlador->inputs->nom_percepcion_id; ?>
+                <?php echo $controlador->inputs->descripcion; ?>
                 <?php echo $controlador->inputs->importe_gravado; ?>
                 <?php echo $controlador->inputs->importe_exento; ?>
                 <?php echo $controlador->inputs->fecha_inicio; ?>
