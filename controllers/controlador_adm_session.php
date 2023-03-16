@@ -17,8 +17,8 @@ use stdClass;
 
 class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_session {
 
-    public array $secciones = array("nom_conf_abono",'nom_conf_nomina','nom_conf_percepcion','nom_conf_factura',
-        'nom_conf_empleado','pr_etapa','cat_sat_isn');
+    public array $secciones = array("nom_conf_abono",'nom_conf_percepcion',
+        'nom_conf_empleado','pr_etapa');
     public array $links_catalogos = array();
     public stdClass $links;
 
@@ -39,18 +39,16 @@ class controlador_adm_session extends \gamboamartin\controllers\controlador_adm_
 
         $this->links_catalogos["nom_conf_abono"]["titulo"] = "Conf. Abono";
         $this->links_catalogos["nom_conf_abono"]["subtitulo"] = "Catalogo";
-        $this->links_catalogos["nom_conf_nomina"]["titulo"] = "Conf. Nomina";
-        $this->links_catalogos["nom_conf_nomina"]["subtitulo"] = "Catalogo";
+
         $this->links_catalogos["nom_conf_percepcion"]["titulo"] = "Conf. Percepcion";
         $this->links_catalogos["nom_conf_percepcion"]["subtitulo"] = "Catalogo";
-        $this->links_catalogos["nom_conf_factura"]["titulo"] = "Conf. Factura";
-        $this->links_catalogos["nom_conf_factura"]["subtitulo"] = "Catalogo";
+
         $this->links_catalogos["nom_conf_empleado"]["titulo"] = "Conf. Empleado";
         $this->links_catalogos["nom_conf_empleado"]["subtitulo"] = "Catalogo";
+
         $this->links_catalogos["pr_etapa"]["titulo"] = "Etapa";
         $this->links_catalogos["pr_etapa"]["subtitulo"] = "Catalogo";
-        $this->links_catalogos["cat_sat_isn"]["titulo"] = "ISN";
-        $this->links_catalogos["cat_sat_isn"]["subtitulo"] = "Catalogo";
+
     }
 
     /**
